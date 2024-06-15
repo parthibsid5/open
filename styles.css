@@ -1,10 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    /* overflow-y: scroll; */
+    /* scroll-behavior: smooth; */
 }
-
 header {
     background: #333;
     color: #fff;
@@ -47,12 +52,8 @@ section h2 {
     margin-top: 0;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+
+
+.icons{
+    letter-spacing: 5px;
 }
