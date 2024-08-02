@@ -27,41 +27,41 @@ function handle_output() {
   if (inputValue === "help") {
     op.innerText = help_text;
     respose.unshift("help")
-    console.log(respose);
+    // console.log(respose);
   }
   if (inputValue === "intro") {
 
     op.innerText = intro;
     respose.unshift("intro")
-    console.log(respose);
+    // console.log(respose);
 
   }
   if (inputValue === "skills") {
 
     op.innerText = skills;
     respose.unshift("skills")
-    console.log(respose);
+    // console.log(respose);
 
   }
   if (inputValue === "projects") {
     op.innerText = projects;
     respose.unshift("projects")
-    console.log(respose);
+    // console.log(respose);
 
   }
   if (inputValue === "contact") {
     op.innerText = contact;
     respose.unshift("contact")
-    console.log(respose);
+    // console.log(respose);
   }
   if (inputValue === "version" || inputValue === "-V") {
 
     op.innerText = version;
     respose.unshift("version")
-    console.log(respose);
+    // console.log(respose);
   }
   if (inputValue != "help" && inputValue != "intro" && inputValue != "skills" && inputValue != "contact" && inputValue != "projects" && inputValue != "version") {
-    console.log("Error");
+    // console.log("Error");
     respose.unshift(`${inputValue}`)
     op.innerText = "Error command not recognized!"
   }
@@ -88,7 +88,7 @@ document.querySelector('.input-text').addEventListener('keydown', function (even
   else if (event.key === 'ArrowUp') {
     event.preventDefault();
     upArrCount++;
-    console.log(upArrCount);
+    // console.log(upArrCount);
     uparrow_list_update()
 
 
