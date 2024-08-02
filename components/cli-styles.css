@@ -1,0 +1,82 @@
+html {
+    
+    background-color: #c0bcbc;
+}
+.nanum-gothic-coding-regular {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+.title{
+    display: flex;
+    gap: 5px;
+    padding: 4px;
+}
+.title-opt{
+    margin: 0;
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+}
+#close{
+    background-color: #ff5f57;
+}
+
+#min{
+    background-color: #ffbd2e;
+}
+
+#max{
+    background-color: #28c940;
+}
+
+.cli-box {
+    background-color: #333333;
+    border-radius: 5px;
+    width: 55vw;
+    height: 31vh;
+    box-sizing: border-box;
+    margin: auto;
+    height: 337px;
+    box-shadow: black 0px 0px 20px 3px;
+
+
+}
+
+.output {
+    /* text-shadow: #fafafa 0.5px 0.5px 3px; */
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 500;
+    font-style: normal;
+    background-color:#0C0C0C;
+    color: antiquewhite;
+    height:290px;
+    width: 100%;
+    position: relative;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.input-command {
+    
+    width:100%;
+    height: 100%;
+    background-color: #333333;
+    border-radius:0px 0px 5px 5px;
+
+}
+.input-text{
+    padding: 2px 3px;
+    margin: 0px 0px 0px 2px;
+    outline: none;
+    box-sizing: border-box;
+    border-style:none;
+    border-radius: inherit;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+    width:99%;
+    background-color: #333333;
+    color:aliceblue
+
+}
