@@ -13,7 +13,7 @@ const help_text = `For more info on a specific command type these :\n'intro'    
 
 const def_view = `Parthib CLI [Version 1.0.2]\nEntitiled under Parthib Sarkar. Every Rights reserved©.\n\nWelcome to cli v1.0.2 \nType "help" for more information`
 
-const version="1.0.2"
+const version = "1.0.2"
 
 let op = document.querySelector(".output")
 
@@ -30,7 +30,7 @@ function handle_output() {
     console.log(respose);
   }
   if (inputValue === "intro") {
- 
+
     op.innerText = intro;
     respose.unshift("intro")
     console.log(respose);
@@ -54,35 +54,35 @@ function handle_output() {
     respose.unshift("contact")
     console.log(respose);
   }
-  if (inputValue === "version" || inputValue==="-V") {
+  if (inputValue === "version" || inputValue === "-V") {
 
     op.innerText = version;
     respose.unshift("version")
     console.log(respose);
   }
-  if(inputValue!="help"&& inputValue!="intro" && inputValue!="skills" && inputValue!="contact" && inputValue!="projects" && inputValue!="version"){
-console.log("Error");
+  if (inputValue != "help" && inputValue != "intro" && inputValue != "skills" && inputValue != "contact" && inputValue != "projects" && inputValue != "version") {
+    console.log("Error");
     respose.unshift(`${inputValue}`)
     op.innerText = "Error command not recognized!"
   }
-  
+
 
 }
 
 
-function uparrow_list_update(){
- if(upArrCount <= respose.length){
-  document.querySelector('.input-text').value=respose[upArrCount-1]
-}
-else if(upArrCount>respose.length){
-  upArrCount=0;
-}
+function uparrow_list_update() {
+  if (upArrCount <= respose.length) {
+    document.querySelector('.input-text').value = respose[upArrCount - 1]
+  }
+  else if (upArrCount > respose.length) {
+    upArrCount = 0;
+  }
 }
 document.querySelector('.input-text').addEventListener('keydown', function (event) {
-  if (event.key === 'Enter'){
+  if (event.key === 'Enter') {
     event.preventDefault();
     handle_output();
-    document.querySelector('.input-text').value ="";
+    document.querySelector('.input-text').value = "";
 
   }
   else if (event.key === 'ArrowUp') {
@@ -93,6 +93,6 @@ document.querySelector('.input-text').addEventListener('keydown', function (even
 
 
   }
-  
+
 })
 
