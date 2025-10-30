@@ -1,1 +1,1 @@
-A portfolio website built to showcaswe my skills ans interests.
+A portfolio website built to showcaswe my skills and interests.
