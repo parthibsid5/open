@@ -2,90 +2,262 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parthib Sarkar</title>
-    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parthib Sarkar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <div class="wrap">
-            <h1>Parthib Sarkar</h1>
-            <p class="tag">Passionate MERN stack developer skilled in JavaScript, Python.</p>
+
+  <nav>
+    <a class="nav-logo" href="#about">ps ~/</a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a class="nav-cli" onclick="openCli()">parthib cli ›_</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="hero-tag">// hello world</p>
+      <h1 class="hero-name">Parthib Sarkar</h1>
+      <p class="hero-role">engineer &amp; builder of things</p>
+      <div class="hero-bio">
+        <p>I’m a developer with skills in Java, Python, Node.js, and React.js, passionate about problem solving, web
+          development, and building practical applications. I enjoy working on DSA, exploring new technologies, and
+          continuously improving my development skills through hands-on projects and learning.</p>
+        <p>I'm open to new roles, collaborations, and opportunities. Feel free to reach out at parthibsid5@gmail.com.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <p class="section-label">// skills</p>
+
+      <div class="skills-group">
+        <p class="skills-group-title">Languages</p>
+        <div class="skills-tags">
+          <span class="tag">Java</span>
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">SQL</span>
         </div>
-    </header>
+      </div>
 
-    <nav>
-        <div class="wrap nav-inner">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="cli.html">Parthib CLI</a></li>
-            </ul>
+      <div class="skills-group">
+        <p class="skills-group-title">Frameworks &amp; Tools</p>
+        <div class="skills-tags">
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Spring MVC</span>
+          <span class="tag">Hibernate</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Git</span>
+          <span class="tag">Docker</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Intellij IDEA</span>
         </div>
-    </nav>
+      </div>
 
-    <main class="wrap">
-        <section id="home" class="hero">
-            <div class="profile">
-                <div class="avatar" aria-hidden="true">PS</div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section-label">// projects</p>
+      <div class="projects-grid">
+
+        <a class="project-item" href="https://parthibsid6.pythonanywhere.com/" target="_blank" rel="noopener">
+          <div class="project-body">
+            <p class="project-name">file-share</p>
+            <p class="project-desc">A simple file upload and download website, accessible without the need to sign-in or
+              sign-up, files includes images, pdfs, text, docs</p>
+          </div>
+
+          <div class="project-meta">
+            <span class="project-lang">Python | Django</span>
+            <span class="project-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="project-item" href="#" target="_blank" rel="noopener">
+          <div class="project-body">
+            <p class="project-name">hotel-booking-api</p>
+            <p class="project-desc">A backend hotel reservation system built using Spring Boot and MySQL featuring hotel
+              search, room availability checking, booking and payment workflows, pagination, role-based access control,
+              and RESTful API architecture.</p>
+          </div>
+          <div class="project-meta">
+            <span class="project-lang">Java | Spring</span>
+            <span class="project-arrow">↗</span>
+          </div>
+        </a>
+
+        <!-- <a class="project-item" href="#" target="_blank" rel="noopener">
+        <div class="project-body">
+          <p class="project-name">travel-buddy</p>
+          <p class="project-desc">A web app where users can search and book travel packages.
+            Implemented dynamic search functionality and integrated Firestore queries to display matching trip with
+            images, pricing, and details, has dedicated user profile management.</p>
+        </div>
+        <div class="project-meta">
+          <span class="project-lang">React | Firebase</span>
+          <span class="project-arrow">↗</span>
+        </div>
+      </a> -->
+
+      <!-- <a class="project-item" href="#" target="_blank" rel="noopener">
+        <div class="project-body">
+          <p class="project-name">project-delta</p>
+          <p class="project-desc">One more project slot. Swap these out with your real work — name, description, language, link.</p>
+        </div>
+        <div class="project-meta">
+          <span class="project-lang">Rust</span>
+          <span class="project-arrow">↗</span>
+        </div>
+      </a> -->
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="section-label">// contact</p>
+      <p class="contact-intro">Open to new projects, roles, and conversations. Reach me through any of the channels
+        below — I try to respond to everything.</p>
+
+      <div class="social-list">
+
+        <a class="social-item" href="https://github.com/parthibsid5" target="_blank" rel="noopener">
+          <div class="social-left">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
             </div>
-            <div class="intro">
-                <h2>Introduction</h2>
-                <p> I am Parthib Sarkar currently pursuing B.Tech in CSE at JIS College of Engineering. I have experience in Java (especially for DSA), Python (with ML libraries like NumPy, Pandas), and web development (Node.js, React.js). I have built projects like a file upload/download website, and an interactive console-like portfolio. I enjoy development, problem solving, and learning new tools.</p>
-
-                <h3>Education</h3>
-                <ul>
-                    <li><strong>B.Tech, Computer Science & Engineering</strong>, JIS College of Engineering (2022 - 2026)</li>
-                    <li><strong>Secondary (X)</strong>, ST. XAVIERS SCHOOL (ICSE board), Year of completion: 2020, CGPA: 9.00/10</li>
-                </ul>
+            <div>
+              <p class="social-name">GitHub</p>
+              <p class="social-handle">parthibsid5</p>
             </div>
-        </section>
+          </div>
+          <span class="social-arrow">↗</span>
+        </a>
 
-        <section id="skills" class="card">
-            <h2>Skills / Expertise</h2>
-            <div class="badges">
-                <span class="badge">JavaScript</span>
-                <span class="badge">React</span>
-                <span class="badge">Node.js</span>
-                <span class="badge">Python</span>
-                <span class="badge">Machine Learning</span>
-                <span class="badge">Problem Solving</span>
-                <span class="badge">DSA</span>
+        <a class="social-item" href="https://www.linkedin.com/in/sarkar2112003/?skipRedirect=true" target="_blank" rel="noopener">
+          <div class="social-left">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
             </div>
-            <ul>
-                <li>Communication & documentation</li>
-                <li>Analytical thinking</li>
-            </ul>
-        </section>
-
-        <section id="projects" class="card">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://parthibsid5.github.io/open/" target="_blank">Portfolio</a></li>
-                <li><a href="https://parthibsid6.pythonanywhere.com" target="_blank">Upload/Download website</a></li>
-            </ul>
-        </section>
-
-        <section id="contact" class="card contact">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, email me or connect on GitHub / LinkedIn.</p>
-            <div class="icons">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=parthibsid5@gmail.com" target="_blank"><img src="icons/gmail.svg" alt="gmail_icon" width="29" height="29"></a>
-                <a href="https://www.linkedin.com/in/sarkar2112003/" target="_blank"><img src="icons/Linkedin.svg" alt="linkedin_icon" width="26" height="26"></a>
-                <a href="https://github.com/parthibsid5" target="_blank"><img src="icons/github.svg" alt="github_icon" width="28" height="28"></a>
+            <div>
+              <p class="social-name">LinkedIn</p>
+              <p class="social-handle">Parthib Sarkar</p>
             </div>
-        </section>
-    </main>
+          </div>
+          <span class="social-arrow">↗</span>
+        </a>
 
-    <footer>
-        <div class="wrap footer-inner">© 2025 Parthib Sarkar — Built with simplicity</div>
-    </footer>
+        <a class="social-item" href="mailto:parthibsid5@gmail.com">
+          <div class="social-left">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.376.122-.74.348-1.05L12 13.19 23.652 4.407c.226.31.348.674.348 1.05z" />
+                <path d="M12 10.48L.54 2.165A1.636 1.636 0 0 1 1.636.727h20.728c.49 0 .94.217 1.096.548L12 10.48z" />
+              </svg>
+            </div>
+            <div>
+              <p class="social-name">Email</p>
+              <p class="social-handle">parthibsid5@gmail.com</p>
+            </div>
+          </div>
+          <span class="social-arrow">↗</span>
+        </a>
 
+        <!-- <a class="social-item" href="https://x.com/PSarkar_00" target="_blank" rel="noopener">
+          <div class="social-left">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </div>
+            <div>
+              <p class="social-name">Twitter / X</p>
+              <p class="social-handle">@PSarkar_00</p>
+            </div>
+          </div>
+          <span class="social-arrow">↗</span>
+        </a> -->
+
+        <!-- <a class="social-item" href="https://www.youtube.com/@iam.pSarkar" target="_blank" rel="noopener">
+          <div class="social-left">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </div>
+            <div>
+              <p class="social-name">YouTube</p>
+              <p class="social-handle">@iam.pSarkar</p>
+            </div>
+          </div>
+          <span class="social-arrow">↗</span>
+        </a> -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="footer-text">built by <a href="#about">parthib sarkar</a> · 2025</p>
+  </footer>
+
+<!-- CLI MODEL -->
+<div class="cli-overlay" id="cliOverlay" onclick="handleOverlayClick(event)">
+  <div class="cli-window">
+    <div class="cli-titlebar">
+      <div class="cli-dot d-red" onclick="closeCli()" style="cursor:pointer"></div>
+      <div class="cli-dot d-yellow"></div>
+      <div class="cli-dot d-green"></div>
+      <span class="cli-title">Parthib CLI v1.0.2 — bash</span>
+    </div>
+    <div class="cli-body" id="cliBody">
+      <div class="cli-output" id="cliOutput"><span class="c-accent">Parthib CLI</span> <span class="c-muted">[Version 1.0.2]</span>
+<span class="c-muted">Entitled under Parthib Sarkar. Every right reserved ©</span>
+
+<span class="c-white">Welcome to cli v1.0.2</span>
+Type <span class="c-accent">help</span> for available commands.
+
+</div>
+      <div class="cli-input-row">
+        <span class="cli-prompt">~/parthib $</span>
+        <input class="cli-input" id="cliInput" type="text" placeholder="type a command..." autofocus autocomplete="off" spellcheck="false" />
+      </div>
+    </div>
+    <div class="cli-close-hint">press esc to close</div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
